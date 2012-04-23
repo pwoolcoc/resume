@@ -1,15 +1,28 @@
-all: resume.pdf
-.PHONY: clean
+all: resume
 
-FILE=pwoolcoc-resume
-JOB=resume
+.PHONY: clean
+.SUFFIXES: .pdf
+
+RESUME=pwoolcoc-resume
+COVER=pwoolcoc-cover
 
 open:
 
-clean: $(JOB).log $(JOB).pdf
-	test -f $(JOB).log && rm $(JOB).log
-	test -f $(JOB).pdf && rm $(JOB).pdf
+clean:
+	rm *.pdf
 
-resume.pdf: $(FILE).tex
-	pdflatex -jobname $(JOB) $<
+
+pwoolcoc-resume.pdf: $(RESUME).tex
+	pdflatex -jobname $* $<
+
+pwoolcoc-cover.pdf: $(COVER).tex
+	pdflatex -jobname $* $<
+
+Paul-Woolcock-Resume.pdf: package.tex pwoolcoc-resume.pdf pwoolcoc-cover.pdf
+	pdflatex -jobname $* $<
+	rm *.log *.aux
+
+resume: Paul-Woolcock-Resume.pdf
+	open $<
+
 

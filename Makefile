@@ -5,6 +5,7 @@ all: resume
 
 RESUME=pwoolcoc-resume
 COVER=pwoolcoc-cover
+FINAL=Paul-Woolcock-Resume
 
 open:
 
@@ -18,11 +19,11 @@ pwoolcoc-resume.pdf: $(RESUME).tex
 pwoolcoc-cover.pdf: $(COVER).tex
 	pdflatex -jobname $* $<
 
-Paul-Woolcock-Resume.pdf: package.tex pwoolcoc-resume.pdf pwoolcoc-cover.pdf
-	pdflatex -jobname $* $<
+resume: package.tex pwoolcoc-resume.pdf pwoolcoc-cover.pdf
+	pdflatex -jobname $(FINAL) $<
 	rm *.log *.aux
 
-resume: Paul-Woolcock-Resume.pdf
+open: Paul-Woolcock-Resume.pdf
 	open $<
 
 

@@ -5,6 +5,7 @@
             linkcolor={blue},
             urlcolor={blue},
             colorlinks]{hyperref}
+\usepackage{fancyhdr}
 \begin{document}
 
 \name{Paul Woolcock}
@@ -12,16 +13,20 @@
 \address{1450 Schafer Drive, Burton, MI 48509}
 \address{pwoolcoc@gmail.com\ -\ (810) 412-8642}
 
+\lfoot{ The source code for this r\'{e}sum\'{e} is available at \href{https://github.com/pwoolcoc/resume.git}{https://github.com/pwoolcoc/resume.git} }
 
 \begin{resume}
 
 
 \section{OVERVIEW}
     \begin{itemize}
-        \item Graduated this past April with a Bachelor's degree in
+        \item For the last year, has been working as a Software Engineer
+              for the security \& storage company Barracuda Networks,
+              out of their Ann Arbor, MI office.
+        \item Graduated in April 2012 with a Bachelor's degree in
               {\sl Computer Science}, with a concentration in
               {\sl Software Engineering}
-        \item For the last 3 years, has been building web applications
+        \item For 3 years, built web applications
               for the University of Michigan-Flint using a variety of
               technologies, including {\sl Python}, {\sl PHP}, {\sl Java},
               {\sl SQL}, {\sl HTML}, {\sl CSS}, and {\sl Javascript}
@@ -29,7 +34,7 @@
               a handful of projects, and participating in a handful
               of communities via their IRC rooms and mailing lists
         \item Passionate about playing the guitar and learning new programming
-              languages. Currently learning {\sl Smalltalk} and {\sl Factor},
+              languages. Currently learning {\sl Rust} and {\sl Factor},
               and has dabbled in many others
     \end{itemize}
 
@@ -41,8 +46,16 @@
               \href{https://mail.mozilla.org/pipermail/rust-dev/2012-March/001511.html}{https://mail.mozilla.org/...012-March/001511.html}
 
 \section{EXPERIENCE}
+    {\sl Software Engineer }
+            \hfill July 2012 - Present \\
+                    Barracuda Networks, \\
+                    Ann Arbor, MI
+        \begin{itemize}
+            \item Works on the Barracuda Appliance Control project.
+        \end{itemize}
+
     {\sl Web Software Developer }
-            \hfill September 2009 - Present \\
+            \hfill September 2009 - July 2012 \\
                    University of Michigan-Flint, \\
                    Information Technology Services, Flint, MI
         \begin{itemize}
@@ -91,6 +104,8 @@
     \textbf{Software Engineering}
     \begin{itemize}
         \item Expert in {\sl Python}.
+              Expert in {\sl Perl},
+              Fluent in {\sl Erlang},
               Fluent in {\sl PHP} and {\sl Javascript}.
               Proficient in {\sl C}, {\sl Java}, {\sl Objective-C},
                 {\sl Clojure}, and {\sl C++}
@@ -119,6 +134,7 @@
         \item Experienced with in-memory data systems like {\sl Redis} and {\sl Memcached}
         \item Experienced with setting up and administrating {\sl MySQL},
               {\sl PostgreSQL}, and {\sl Microsoft SQL Server} databases
+        \item Experienced with build systems like {\sl GNU Make}
         \item Familiar with automated provisioning tools such as {\sl Puppet}
               and {\sl Chef} in a development environment
     \end{itemize}
@@ -128,7 +144,7 @@
 \section{EDUCATION} 
                 {\sl Bachelor of Science,} Computer Science \\
                 University of Michigan-Flint, Flint, MI \\
-                Expected April 2012 \\
+                April 2012 \\
                 Concentration: Software Engineering \\
                 Minor: Mathematics
                 \begin{itemize}
@@ -146,10 +162,9 @@
 
 \begin{flushleft}
 {\sl References available upon request} \\
-        \vspace{2 mm}
-The source code for this r\'{e}sum\'{e} is available at
-\href{https://github.com/pwoolcoc/resume.git}{https://github.com/pwoolcoc/resume.git}
 \end{flushleft}
+
+\pagestyle{fancy}
 
 \end{document}
 

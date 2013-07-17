@@ -7,11 +7,11 @@ RESUME=pwoolcoc-resume
 COVER=pwoolcoc-cover
 FINAL=Paul-Woolcock-Resume
 
-open:
+# Change this for your PDF viewer
+VIEWER=evince
 
 clean:
 	rm *.pdf
-
 
 pwoolcoc-resume.pdf: $(RESUME).tex
 	pdflatex -jobname $* $<
@@ -23,7 +23,6 @@ resume: package.tex pwoolcoc-resume.pdf pwoolcoc-cover.pdf
 	pdflatex -jobname $(FINAL) $<
 	rm *.log *.aux
 
-open: Paul-Woolcock-Resume.pdf
-	open $<
-
+open:
+	$(VIEWER) $(RESUME).pdf
 

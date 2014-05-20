@@ -8,7 +8,7 @@ COVER=pwoolcoc-cover
 FINAL=Paul-Woolcock-Resume
 
 # Change this for your PDF viewer
-VIEWER=evince
+VIEWER=$(shell which evince || which zathura)
 
 clean:
 	rm *.pdf

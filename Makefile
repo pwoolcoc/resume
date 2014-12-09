@@ -1,37 +1,29 @@
-all: resume
-
-.PHONY: clean
-.SUFFIXES: .pdf
-
-RESUME=pwoolcoc-resume
-COVER=pwoolcoc-cover
-FINAL=Paul-Woolcock-Resume
+RESUME := resume
 
 # Change this for your PDF viewer
-VIEWER=$(shell which evince || which zathura)
+VIEWER := $(shell which evince || which zathura)
+
+all: resume.html resume.pdf resume.docx resume.txt
 
 clean:
 	rm *.pdf
+	rm *.html
+	rm *.docx
+	rm *.txt
 
-clean-build:
-	-rm *.log *.aux
+resume.html: $(RESUME).markdown
+	pandoc -c style.css --standalone --from markdown --to html -o $@ $<
 
-pwoolcoc-resume.pdf: $(RESUME).tex
-	pdflatex -jobname $* $<
+resume.pdf: $(RESUME).markdown
+	pandoc --standalone --from markdown --to latex -o $@ $<
 
-pwoolcoc-cover.pdf: $(COVER).tex
-	pdflatex -jobname $* $<
+resume.docx: $(RESUME).markdown
+	pandoc --from markdown --to docx -o $@ $<
 
-resume-with-cover: package.tex pwoolcoc-resume.pdf pwoolcoc-cover.pdf
-	pdflatex -jobname $(FINAL) $<
-	$(MAKE) clean-build
-
-resume-no-cover: package.tex pwoolcoc-resume.pdf
-	pdflatex -jobname $(FINAL) $<
-	$(MAKE) clean-build
-
-resume: resume-no-cover
+resume.txt: $(RESUME).markdown
+	pandoc --standalone --smart --from markdown --to plain -o $@ $<
 
 open:
 	$(VIEWER) $(RESUME).pdf
 
+.PHONY: clean

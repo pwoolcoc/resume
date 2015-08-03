@@ -9,7 +9,14 @@
 
 ## Experience
 
-July 2012 - Present
+Aug 2015 - Present
+:   *Senior Software Engineer at [Barracuda Networks](http://www.barracuda.com)*
+    (Ann Arbor, MI).
+
+    Wrote Perl, Javascript, Erlang and Go building the Barracuda Appliance
+    Control, the central management service for Barracuda appliances.
+
+July 2012 - Aug 2015
 :   *Software Engineer at [Barracuda Networks](http://www.barracuda.com)*
     (Ann Arbor, MI).
 

@@ -12,7 +12,7 @@ clean:
 	rm *.txt
 
 resume.html: $(RESUME).markdown
-	pandoc -c style.css --standalone --from markdown --to html -o $@ $<
+	pandoc -c css/resume.css --standalone --from markdown --to html -o $@ $<
 
 resume.pdf: $(RESUME).markdown
 	pandoc --standalone --from markdown --to latex -o $@ $<

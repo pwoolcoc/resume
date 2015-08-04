@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo docker run -v $PWD:/source pauldwoolcock/my-resume-builder:v1

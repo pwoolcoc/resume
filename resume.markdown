@@ -2,7 +2,7 @@
 
 ----
 
-> Specialties: Perl, Python, Javascript, Go, Erlang \
+> Specialties: Perl, Python, Javascript, Rust, Go \
 > BS in Computer Science from the University of Michigan-Flint
 
 ----

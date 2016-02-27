@@ -2,14 +2,22 @@
 
 ----
 
-> Specialties: Perl, Python, Javascript, Rust, Go \
+> Specialties: Learning new languages, Understanding and Maintaining complex systems \
+> Languages: Python, Perl, Javascript, Rust, Go \
 > BS in Computer Science from the University of Michigan-Flint
 
 ----
 
 ## Experience
 
-Aug 2015 - Present
+October 2016 - Present
+:   *Software Engineer - Integrations at [Tenable Network Security](https://www.tenable.com)*
+    (Columbia, MD) - (REMOTE).
+
+    Wrote in various languages to integrate other services with
+    Tenables products.
+
+Aug 2015 - October 2016
 :   *Senior Software Engineer at [Barracuda Networks](http://www.barracuda.com)*
     (Ann Arbor, MI).
 
@@ -117,6 +125,5 @@ My open source work can be found on my github account at
 
 ----
 
-> <paul@woolcock.us> | 8105169070 \
-> 1450 Schafer Dr, Burton MI, 48509
+> <paul@woolcock.us> | 8105169070
 

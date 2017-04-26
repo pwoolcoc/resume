@@ -2,22 +2,24 @@
 
 ----
 
-> Specialties: Learning new languages, Understanding and Maintaining complex systems \
-> Languages: Python, Perl, Javascript, Rust, Go \
+> Specialties: Understanding and Maintaining complex systems, Learning new languages \
+> Languages: Java, Groovy, Python, Javascript, Rust, Go \
 > BS in Computer Science from the University of Michigan-Flint
 
 ----
 
 ## Experience
 
-October 2016 - Present
+October 2015 - Present
 :   *Software Engineer - Integrations at [Tenable Network Security](https://www.tenable.com)*
     (Columbia, MD) - (REMOTE).
 
-    Wrote in various languages to integrate other services with
-    Tenables products.
+    Developed services using Java & Groovy for tenable.io
 
-Aug 2015 - October 2016
+    Wrote in various languages to integrate 3rd-party services with
+    Tenable products.
+
+Aug 2015 - October 2015
 :   *Senior Software Engineer at [Barracuda Networks](http://www.barracuda.com)*
     (Ann Arbor, MI).
 
@@ -42,7 +44,7 @@ September 2009 - July 2012
     * Developed Java/XSLT components for an Autonomy/Interwoven CMS used
       on campus.
     * Implemented a Microsoft SharePoint 2010 system across campus, and
-      held training sessions for users.  
+      held training sessions for users.
 
 February 2009 - September 2009
 :   *Student Web Software Developer at the [University of
@@ -52,7 +54,7 @@ February 2009 - September 2009
     * Developed a mobile version of the campus Faculty/Staff phonebook
       using jQuery mobile.
     * Helped develop an interactive campus map using the Google Maps API.
-    * Provided training and support for an Autonomy/Interwoven CMS.  
+    * Provided training and support for an Autonomy/Interwoven CMS.
 
 June 2008 - August 2009
 :   *Helpdesk Technician at [Genesee County Community Mental
@@ -62,12 +64,12 @@ June 2008 - August 2009
     * Provided desktop support to the staff of GCCMH both over the phone
       and in person.
     * Assisted in the setup and imaging of new agency computers.
-    * Performed basic Active Directory administration.  
+    * Performed basic Active Directory administration.
 
 ## Skills
 
 Software Engineering
-:   
+:
     Expert in Perl, Python, and Javascript.  \
     Fluent in Erlang, Go, and PHP.  \
     Proficient in C, Java, Clojure, and C++.  \
@@ -78,7 +80,7 @@ Software Engineering
     Experienced with CI systems like Jenkins and Travis CI.
 
 Web Development
-:   
+:
     Have developed applications using Backbone.js, and have dabbled with
     Ember.js and Angular.js.  \
     Fluent in developing cross-browser, W3C standards-compliant websites
@@ -87,7 +89,7 @@ Web Development
     Facebook, Twitter, and Google.
 
 Systems Administration
-:   
+:
     Familiar with configuring Linux distributions such as Red Hat
     Enterprise Linux, CentOS, Debian, and Ubuntu.  \
     Experienced in administrating web servers such as Apache2, Nginx,
@@ -106,8 +108,8 @@ April 2012
     Michigan-Flint](http://www.umflint.edu/)*
     (Flint, MI).
 
-    Concentration: Software Engineering  
-    Minor: Mathematics  
+    Concentration: Software Engineering
+    Minor: Mathematics
 
     For Senior Capstone project, designed and wrote an iPad/iPod-based
     hospital "Call Button" system.
@@ -116,7 +118,7 @@ May 2005
 :   *BA in Music at [Alma College](http://www.alma.edu/)*
     (Alma, MI).
 
-    Concentration: Classical Guitar  
+    Concentration: Classical Guitar
 
 ## Open Source
 

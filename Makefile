@@ -1,4 +1,4 @@
-RESUME := resume
+RESUME := source
 
 # Change this for your PDF viewer
 VIEWER := $(shell which evince || which zathura)

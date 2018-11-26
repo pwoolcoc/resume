@@ -1,32 +1,36 @@
-# Paul Woolcock
+---
+title: "Paul Woolcock"
+---
 
 ----
 
-> Specialties: Understanding and Maintaining complex systems, Learning new languages \
-> Languages: Java, Groovy, Python, Javascript, Rust, Go \
+> Specialties: Understanding and maintaining complex systems \
+> Languages: Kotlin, Groovy, Python, Javascript, Rust, Go \
 > BS in Computer Science from the University of Michigan-Flint
 
 ----
 
 ## Experience
 
-October 2015 - Present
-:   *Software Engineer - Integrations at [Tenable Network Security](https://www.tenable.com)*
+February 2017 - Current
+:   *Software Engineer at [Tenable Network Security](https://www.tenable.com)*
     (Columbia, MD) - (REMOTE).
 
-    Developed services using Java & Groovy for tenable.io
+    Lead initiaves through every phase of the development process, from
+    design to implementation, testing, and deployment
+
+    Developed microservices using Java, Groovy, and Kotlin
+
+    Deployed services to a Kubernetes cluster through the use of a CI/CD pipeline
+
+October 2015 - February 2017
+:   *Software Engineer - Integrations at [Tenable Network Security](https://www.tenable.com)*
+    (Columbia, MD) - (REMOTE).
 
     Wrote in various languages to integrate 3rd-party services with
     Tenable products.
 
-Aug 2015 - October 2015
-:   *Senior Software Engineer at [Barracuda Networks](http://www.barracuda.com)*
-    (Ann Arbor, MI).
-
-    Wrote Perl, Javascript, Erlang and Go building the Barracuda Appliance
-    Control, the central management service for Barracuda appliances.
-
-July 2012 - Aug 2015
+July 2012 - October 2015
 :   *Software Engineer at [Barracuda Networks](http://www.barracuda.com)*
     (Ann Arbor, MI).
 
@@ -56,33 +60,18 @@ February 2009 - September 2009
     * Helped develop an interactive campus map using the Google Maps API.
     * Provided training and support for an Autonomy/Interwoven CMS.
 
-June 2008 - August 2009
-:   *Helpdesk Technician at [Genesee County Community Mental
-    Health](http://gencmh.org)*
-    (Flint, MI).
-
-    * Provided desktop support to the staff of GCCMH both over the phone
-      and in person.
-    * Assisted in the setup and imaging of new agency computers.
-    * Performed basic Active Directory administration.
 
 ## Skills
 
 *Software Engineering*
 
-* Expert in Perl, Python, and Javascript.
-* Fluent in Erlang, Go, and PHP.
-* Proficient in C, Java, Clojure, and C++.
-* Experienced with web development frameworks like Django, Flask, and Laravel.
-* Experienced with testing frameworks like Nose and JUnit.
+* Expert in Java, Rust, Kotlin, and Python.
+* Fluent in Go, Javascript, and Erlang.
+* Proficient with Apache Kafka.
+* Experienced with web development frameworks like Rocket, RestEasy, Django, and Flask.
+* Experienced with testing frameworks like Nose and Spock.
 * Experienced with version control systems such as Git and Mercurial.
 * Experienced with CI systems like Jenkins and Travis CI.
-
-*Web Development*
-
-* Have developed applications using Backbone.js, and have dabbled with Ember.js and Angular.js.
-* Fluent in developing cross-browser, W3C standards-compliant websites and web applications.
-* Proficient in using external APIs such as those provided by Facebook, Twitter, and Google.
 
 *Systems Administration*
 
@@ -120,9 +109,14 @@ May 2005
 ## Open Source
 
 My open source work can be found on my github account at
-[https://github.com/pwoolcoc](https://github.com/pwoolcoc)
+[https://github.com/pwoolcoc](https://github.com/pwoolcoc), and on my gitlab account at [https://gitlab.com/pwoolcoc](https://gitlab.com/pwoolcoc)
+
+The list of Rust crates I have developed are at
+[https://crates.io/users/pwoolcoc](https://crates.io/users/pwoolcoc)
+
+The source code for this document can be found at
+[https://github.com/pwoolcoc/resume](https://github.com/pwoolcoc/resume)
 
 ----
 
-> <paul@woolcock.us> | 8105169070
-
+> <paul@woolcock.us> | +1 (810) 516-9070

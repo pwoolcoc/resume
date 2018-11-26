@@ -1,29 +1,34 @@
-RESUME := source
+INPUT := source
+OUTPUT := resume
+
+ROOTDIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+OUTDIR ?= $(PWD)/build
 
 # Change this for your PDF viewer
-VIEWER := $(shell which evince || which zathura)
+VIEWER := $(shell which evince || which zathura || which open)
 
-all: resume.html resume.pdf resume.docx resume.txt
+all: $(OUTDIR)/resume.html $(OUTDIR)/resume.pdf $(OUTDIR)/resume.docx $(OUTDIR)/resume.txt
 
+$(OUTDIR):
+	mkdir -p $(OUTDIR)
+
+# Avoid removing the source files
 clean:
-	rm *.pdf
-	rm *.html
-	rm *.docx
-	rm *.txt
+	[[ "$(ROOTDIR)" != "$(abspath $(OUTDIR))" ]] && rm -rf $(OUTDIR) || exit 0
 
-resume.html: $(RESUME).markdown
+$(OUTDIR)/resume.html: $(INPUT).markdown $(OUTDIR)
 	pandoc -c css/resume.css --standalone --from markdown --to html -o $@ $<
 
-resume.pdf: $(RESUME).markdown
+$(OUTDIR)/resume.pdf: $(INPUT).markdown $(OUTDIR)
 	pandoc --standalone --from markdown --to latex -o $@ $<
 
-resume.docx: $(RESUME).markdown
+$(OUTDIR)/resume.docx: $(INPUT).markdown $(OUTDIR)
 	pandoc --from markdown --to docx -o $@ $<
 
-resume.txt: $(RESUME).markdown
-	pandoc --standalone --smart --from markdown --to plain -o $@ $<
+$(OUTDIR)/resume.txt: $(INPUT).markdown $(OUTDIR)
+	pandoc --standalone --from markdown+smart --to plain -o $@ $<
 
-open:
-	$(VIEWER) $(RESUME).pdf
+open: $(OUTDIR)/$(OUTPUT).pdf
+	$(VIEWER) $(OUTDIR)/$(OUTPUT).pdf
 
 .PHONY: clean
